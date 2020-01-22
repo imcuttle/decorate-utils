@@ -9,7 +9,7 @@
 
 > The utils for creating decorate of legacy or current proposal
 
-中文介绍
+[中文介绍](https://imcuttle.github.io/JS%20%E4%B8%AD%E7%9A%84%E8%A3%85%E9%A5%B0%E5%99%A8%E6%A8%A1%E5%BC%8F)
 
 ## Installation
 
