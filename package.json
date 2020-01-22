@@ -1,0 +1,50 @@
+{
+  "name": "decorate-utils",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "The utils for creating decorate of legacy or current proposal",
+  "author": "imcuttle <moyuyc95@gmail.com>",
+  "scripts": {
+    "test": "jest",
+    "prepublishOnly": "npm test",
+    "test-ci": "npm run clean && npm test",
+    "prepare": "npm run build",
+    "clean": "rimraf lib",
+    "build": "npm run clean && babel src/ -Dd lib",
+    "dev": "npm run build -- -w"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "sideEffects": false,
+  "engines": {
+    "node": ">=8"
+  },
+  "keywords": [
+    "imcuttle",
+    "decorate",
+    "demo",
+    "decorate-utils"
+  ],
+  "license": "MIT",
+  "repository": "imcuttle/decorate-utils",
+  "jest": {
+    "testMatch": [
+      "**/__test{s,}__/*.(spec|test).{t,j}s{x,}"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@types/jest": "^24.9.0",
+    "husky": "^4.2.0",
+    "jest": "^25.1.0",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1",
+    "rimraf": "^3.0.0"
+  }
+}

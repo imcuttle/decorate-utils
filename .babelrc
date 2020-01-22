@@ -1,0 +1,37 @@
+{
+  "presets": [
+    [
+      "@babel/env",
+      {
+        "targets": {
+          "node": "6",
+          "browsers": ["last 2 versions"]
+        }
+      }
+    ]
+  ],
+  "env": {
+    "test-1": {
+      "plugins": [
+        [
+          "@babel/proposal-decorators",
+          {
+            "decoratorsBeforeExport": true
+          }
+        ],
+        "@babel/proposal-class-properties"
+      ]
+    },
+    "test": {
+      "plugins": [
+        [
+          "@babel/proposal-decorators",
+          {
+            "legacy": true
+          }
+        ],
+        ["@babel/proposal-class-properties", { "loose": true }]
+      ]
+    }
+  }
+}
