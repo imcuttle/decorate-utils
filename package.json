@@ -1,6 +1,6 @@
 {
   "name": "decorate-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "description": "The utils for creating decorate of legacy or current proposal",
   "author": "imcuttle <moyuyc95@gmail.com>",
@@ -14,7 +14,11 @@
     "dev": "npm run build -- -w"
   },
   "files": [
-    "src", "lib", "index.js", "examples", "__tests__"
+    "src",
+    "lib",
+    "index.js",
+    "examples",
+    "__tests__"
   ],
   "husky": {
     "hooks": {
