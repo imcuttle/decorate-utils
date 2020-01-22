@@ -13,6 +13,9 @@
     "build": "npm run clean && babel src/ -Dd lib",
     "dev": "npm run build -- -w"
   },
+  "files": [
+    "src", "lib", "index.js", "examples", "__tests__"
+  ],
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged"
